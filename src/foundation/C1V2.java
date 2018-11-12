@@ -32,7 +32,7 @@ public class C1V2 {
 		BigInteger d = e.modInverse(phi);
 		System.out.println("d="+d);
 		
-		String msg = "3";
+		String msg = "30";
 		BigInteger m = new BigInteger(msg.getBytes());
 		// use mod if m >= n
 		System.out.println("m="+ m);

@@ -47,6 +47,16 @@ public class C3 {
 	      cipher.init(Cipher.DECRYPT_MODE, privKey);
 	      byte[] pt = cipher.doFinal(c.toByteArray());
 	      System.out.println("PT from JCE:\t" + new String(pt).trim());
+	      /*
+	       * 2.
+			n1=pq	n2=pr
+			直接算gcd(n1, n2)=p 就解出来了
+	       */
+	      
+	      /*
+	       *x!=1 not prime 是根据fermet定理
+			x=1 那么两个factor= gcd(k-1, r) 和gcd(k+1, r)
+	       */
 
 	}
 
